@@ -37,10 +37,10 @@ CREATE TABLE IF NOT EXISTS users (
     role VARCHAR(20) NOT NULL,
     ref_id INT
 );
-
 INSERT INTO users (username, password, role, ref_id) SELECT 'admin', 'admin123', 'admin', NULL WHERE NOT EXISTS (SELECT 1 FROM users WHERE username = 'admin');
 INSERT INTO users (username, password, role, ref_id) SELECT 'faculty', 'faculty123', 'faculty', NULL WHERE NOT EXISTS (SELECT 1 FROM users WHERE username = 'faculty');
 INSERT INTO users (username, password, role, ref_id) SELECT 'student', 'student123', 'student', 1 WHERE NOT EXISTS (SELECT 1 FROM users WHERE username = 'student');
+INSERT INTO users (username, password, role, ref_id) SELECT 'tanishq@institute.com', 'student123', 'student', 1 WHERE NOT EXISTS (SELECT 1 FROM users WHERE username = 'tanishq@institute.com');
 
 INSERT INTO courses (course_id, course_name, duration, fees, faculty_name) 
 SELECT 1, 'Java Full Stack Development', '6 Months', 50000.00, 'Dr. Sarah Connor' 
