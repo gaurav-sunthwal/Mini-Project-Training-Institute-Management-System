@@ -50,20 +50,16 @@ A dynamic, premium, full-featured **Training Institute Management System** built
 * **Maven** (Apache Maven build system).
 
 ### Step-by-Step Setup
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/gaurav-sunthwal/Mini-Project-Training-Institute-Management-System.git
-   cd Mini-Project-Training-Institute-Management-System
-   ```
-2. **Compile and Package the application:**
+
+1. **Compile and Package the application:**
    ```bash
    mvn clean package
    ```
-3. **Start the Embedded Tomcat Local Server:**
+2. **Start the Embedded Tomcat Local Server:**
    ```bash
    mvn tomcat7:run
    ```
-4. **Access the application in your browser:**
+3. **Access the application in your browser:**
    👉 **`http://localhost:8080/`**
 
 ---
